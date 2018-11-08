@@ -31,8 +31,7 @@ jQuery(document).ready(function() {
         var email = $(this).find('input#email').val();
         var password = $(this).find('input#password').val();
         var retypepswd= $(this).find('input#repassword').val();
-        var 
-
+        
         
         if(username == '') {
             $(this).find("label[for='username']").append("<span style='display:none' class='red'> - Please enter a valid username.</span>");

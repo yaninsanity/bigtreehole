@@ -13,8 +13,5 @@ def add_acc(request):
 		gender=2
 		avatar=request.FILES.get('avatar')
 
-		with open(avatar.name,'wb') af f:
-			for line in avatar:
-				f.write(line)
-			return HttpResponse('ok')
+	return HttpResponse('ok')
 		
