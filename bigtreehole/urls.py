@@ -20,5 +20,7 @@ from userReg import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     #homepage
-    path('',views.reg,name='reg')
+    path('',views.reg,name='reg'),
+    path('',views.add_acc,name='reg')
+
 ]

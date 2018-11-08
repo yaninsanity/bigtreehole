@@ -30,7 +30,9 @@ jQuery(document).ready(function() {
         var username = $(this).find('input#username').val();
         var email = $(this).find('input#email').val();
         var password = $(this).find('input#password').val();
-        
+        var retypepswd= $(this).find('input#repassword').val();
+        var 
+
         
         if(username == '') {
             $(this).find("label[for='username']").append("<span style='display:none' class='red'> - Please enter a valid username.</span>");
@@ -45,6 +47,14 @@ jQuery(document).ready(function() {
         if(password == '') {
             $(this).find("label[for='password']").append("<span style='display:none' class='red'> - Please enter a valid password.</span>");
             $(this).find("label[for='password'] span").fadeIn('medium');
+            return false;
+        }
+
+        if(password!=retypepswd)
+        {
+
+            $(this).find("label[for='repassword']").append("<span stype='display:none' class='red'> - Please type the same password.</span>");
+            $(this).find("label[for='repassword'] span").fadeIn('medium');
             return false;
         }
     });

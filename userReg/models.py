@@ -3,7 +3,7 @@ import django.utils.timezone as timezone
 # Create your models here.
 
 class User(models.Model):
-		uid = models.IntegerField(primary_key=True)
+		uid = models.AutoField(primary_key=True)
 		uname=models.CharField(max_length=50)
 		upassword=models.CharField(max_length=16)
 		gender=(
@@ -13,7 +13,7 @@ class User(models.Model):
 			)
 		regTime=models.DateField('regDate',auto_now=True)
 		email=models.EmailField(max_length=50)
-		img= models.ImageField(upload_to='upload')
+		avatar= models.ImageField(upload_to='upload')
 
 
 class Content(models.Model):
