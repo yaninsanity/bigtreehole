@@ -25,6 +25,7 @@ jQuery(document).ready(function() {
         $(this).find("label[for='username']").html('Username');
         $(this).find("label[for='email']").html('Email');
         $(this).find("label[for='password']").html('Password');
+        $(this).find("label[for='repassword']").html('rePassword');
         ////
 
         var username = $(this).find('input#username').val();
